@@ -112,7 +112,7 @@ class Login extends React.Component {
       tabIndex: 0
     };
 
-    
+
 
     // if (this.props.tenant.enable_mobile_code_login || this.props.tenant.enable_email_code_login) {
     //   this.state.loginWithCode = true;
@@ -134,7 +134,7 @@ class Login extends React.Component {
     //   this.state.loginByEmail = true;
     //   this.state.loginByMobile = true;
     //   this.state.loginBy = "email"
-    // } 
+    // }
 
     // this.state.loginWithCode = false
     // this.state.loginWithPassword = true
@@ -529,13 +529,13 @@ class Login extends React.Component {
             </div>
 
             {!this.state.MFA && this.props.tenant.enable_register && this.props.tenant.disabled_account_register !== true &&
-              <div className="text-sm leading-5 mt-6 text-center">
+              <div className="no-account text-sm leading-5 mt-6 text-center">
                 <FormattedMessage
                   id='accounts.no_account'
                   defaultMessage='No Account?'
                 />
                 <button type="button" onClick={this.goSignup}
-                  className="font-medium text-blue-600 hover:text-blue-500 focus:outline-none hover:underline transition ease-in-out duration-150">
+                  className="sign-up font-medium text-blue-600 hover:text-blue-500 focus:outline-none hover:underline transition ease-in-out duration-150">
                   <FormattedMessage
                     id='accounts.signup'
                     defaultMessage='Sign Up'
